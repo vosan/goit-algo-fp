@@ -40,15 +40,3 @@ def draw_tree(tree_root):
     plt.figure(figsize=(8, 5))
     nx.draw(tree, pos=pos, labels=labels, arrows=False, node_size=2500, node_color=colors)
     plt.show()
-
-
-# Створення дерева
-root = Node(0)
-root.left = Node(4)
-root.left.left = Node(5)
-root.left.right = Node(10)
-root.right = Node(1)
-root.right.left = Node(3)
-
-# Відображення дерева
-draw_tree(root)
